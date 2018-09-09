@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BudgetDatabaseApp.MainActivity"
+    tools:layout_editor_absoluteY="73dp">
+
+    <Button
+        android:id="@+id/createDbButton"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Create Database"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/monthEditText" />
+
+    <Button
+        android:id="@+id/queryDbButton"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Query Database"
+        app:layout_constraintStart_toEndOf="@+id/createDbButton"
+        app:layout_constraintTop_toBottomOf="@+id/monthEditText" />
+
+    <EditText
+        android:id="@+id/monthEditText"
+        android:layout_width="105dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="month"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoTextView" />
+
+    <EditText
+        android:id="@+id/dayEditText"
+        android:layout_width="105dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="day"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/monthEditText"
+        app:layout_constraintTop_toBottomOf="@+id/infoTextView" />
+
+    <EditText
+        android:id="@+id/yearEditText"
+        android:layout_width="105dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="year"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/dayEditText"
+        app:layout_constraintTop_toBottomOf="@+id/infoTextView" />
+
+    <EditText
+        android:id="@+id/rangeEditText"
+        android:layout_width="105dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="range"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/yearEditText"
+        app:layout_constraintTop_toBottomOf="@+id/infoTextView" />
+
+    <TextView
+        android:id="@+id/infoTextView"
+        android:layout_width="364dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="15dp"
+        android:text="Use numbers for all fields below"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
